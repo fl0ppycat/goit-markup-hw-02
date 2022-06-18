@@ -14,7 +14,6 @@
 
 
 body {
-    min-width: 1600px;
     background-color: var(--white);
     
     font-family: 'Roboto', sans-serif;
@@ -58,7 +57,7 @@ h2{
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
@@ -74,7 +73,7 @@ header {
     display: flex;
     flex-direction: row;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-around;
     
     background-color: var(--white);
     border-bottom: 1px solid var(--light-pink);
@@ -94,6 +93,7 @@ header ul{
 
 header ul a {
     margin: 25px;
+    white-space: nowrap;
 }
 
 header > ul > li > a{
@@ -152,8 +152,7 @@ footer .studio-logo span:last-child {
 }
 
 .hero-section > button {
-    width: 200px;
-    height: 50px;
+    padding: 10px 32px;
 
     background-color: var(--brand-blue);
     color: var(--white);
@@ -172,7 +171,9 @@ footer .studio-logo span:last-child {
 }
 
 
-
+.advantages-section{
+    max-width: 1600px;
+}
 
 .advantages-section > ul {
     padding: 0;
@@ -180,7 +181,7 @@ footer .studio-logo span:last-child {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .advantages-section li {
@@ -188,7 +189,6 @@ footer .studio-logo span:last-child {
 
     font-size: 14px;
     line-height: 1.71;
-
     letter-spacing: 0.03em;
 
     color: var(--light-gray);
@@ -246,17 +246,14 @@ footer .studio-logo span:last-child {
 
 .portfolio-section .cards,
 .our-team-section .cards {
-    min-width: 1210px;
-
-    margin: auto 5%;
+    padding: 0;
+    /* margin: auto 5%; */
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-
-    padding: 0;
 }
 
 .card {
@@ -292,7 +289,7 @@ footer .studio-logo span:last-child {
     
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -300,7 +297,7 @@ footer .studio-logo span:last-child {
 
 .our-team-section .card-caption {
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 
     color: var(--light-gray);
@@ -327,10 +324,10 @@ footer .studio-logo span:last-child {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63px;
+    line-height: 1.63;
     letter-spacing: 0.03em;
 
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .portfolio-cards-filter button:hover,
