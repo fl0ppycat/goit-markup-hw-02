@@ -1,14 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
 
 
+:root {
+    --brand-black: #212121;
+    --brand-blue: #2196F3;
+    --dark-blue: #188CE8;
+    --dark-gray: #2F303A;
+    --light-gray: #757575;
+    --light-pink: #ECECEC;
+    --white: #FFFFFF;
+    --transparent-gray: rgba(255, 255, 255, 0.6);
+}
+
+
 body {
     min-width: 1600px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 
-    color: #212121;
+    color: var(--brand-black);
 }
 
 section{
@@ -17,29 +29,26 @@ section{
 
 a{
     text-decoration: none;
-    color: #212121;
+    color: var(--brand-black);
 }
 
+a:active,
+a:focus,
 a:hover{
-    color: #2196F3;
+    color: var(--brand-blue);
+    outline: none;
+}
+
+a:focus{
+    text-decoration: underline;
+}
+
+button{
+    cursor: pointer;
 }
 
 ul {
     list-style-type: none;
-}
-
-h1{
-    text-align: center;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
-
-    /* or 136% */
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
 }
 
 h2{
@@ -67,19 +76,19 @@ header {
     align-items:center;
     justify-content: space-between;
     
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #ECECEC;;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--light-pink);
 }
 
 header ul{
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -88,7 +97,7 @@ header ul a {
 }
 
 header > ul > li > a{
-    color: #757575;
+    color: var(--light-gray);
 }
 
 .studio-logo {
@@ -97,20 +106,18 @@ header > ul > li > a{
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-
-    /* identical to box height */
+    line-height: 1.19;
     letter-spacing: 0.03em;
 
-    color: #2196F3;
+    color: var(--brand-blue);
 }
 
 header .studio-logo span:last-child {
-    color: #212121;
+    color: var(--brand-black);
 }
 
 footer .studio-logo span:last-child {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 
@@ -125,32 +132,44 @@ footer .studio-logo span:last-child {
     align-items: center;
     justify-content: center;
     
-    background-color: #2F303A;
+    background-color: var(--dark-gray);
     
     text-transform: uppercase;
 }
 
 .hero-section > h1{
-    color: #FFFFFF;
+    text-align: center;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white);
+    color: var(--white);
 }
 
 .hero-section > button {
     width: 200px;
     height: 50px;
 
-    background-color: #2196F3;
-    color: #FFFFFF;
+    background-color: var(--brand-blue);
+    color: var(--white);
 
     border: none;
     border-radius: 4px;
 
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-
-    cursor: pointer;
+    line-height: 1.88;
 }
 
+.hero-section>button:focus,     
+.hero-section>button:hover{
+    background: var(--dark-blue);
+}
 
 
 
@@ -168,12 +187,11 @@ footer .studio-logo span:last-child {
     margin: auto 15px ;
 
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 
-    /* or 171% */
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--light-gray);
 }
 
 .advantages-section h3 {
@@ -181,11 +199,11 @@ footer .studio-logo span:last-child {
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    color: #212121;
+    color: var(--brand-black);
 }
 
 
@@ -245,7 +263,7 @@ footer .studio-logo span:last-child {
     margin: 15px;
     padding-bottom: 24px;
 
-    background: #FFFFFF;
+    background: var(--white);
 
     font-style: normal;
 }
@@ -274,7 +292,7 @@ footer .studio-logo span:last-child {
     
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19px;
 
     text-align: center;
     letter-spacing: 0.03em;
@@ -285,7 +303,7 @@ footer .studio-logo span:last-child {
     line-height: 19px;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--light-gray);
 }
 
 
@@ -309,29 +327,25 @@ footer .studio-logo span:last-child {
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
-
-    /* identical to box height, or 162% */
-    /* text-align: center; */
+    line-height: 1.63px;
     letter-spacing: 0.03em;
 
     white-space: nowrap
 }
 
-.portfolio-cards-filter button:hover {
-    background: #2196F3;
-    color: #FFFFFF;
+.portfolio-cards-filter button:hover,
+.portfolio-cards-filter button:active,
+.portfolio-cards-filter button:focus {
+    background: var(--brand-blue);
+    color: var(--white);
 
-    /* shadow-middle */
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    cursor: pointer;
 }
 
 .portfolio-section {
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .portfolio-section .card {
@@ -348,20 +362,20 @@ footer .studio-logo span:last-child {
     
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
 
-    color: #212121;
+    color: var(--brand-black);
 }
 
 .portfolio-section .card-caption{
     margin-left: 30px;
 
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.9;
     letter-spacing: 0.03em;
 
-    color: #757575;
+    color: var(--light-gray);
 }
 
 
@@ -371,7 +385,7 @@ footer .studio-logo span:last-child {
 footer{
     padding: 60px 200px;
 
-    background: #2F303A;
+    background: var(--dark-gray);
 }
 
 footer>address>ul{
@@ -379,17 +393,15 @@ footer>address>ul{
 
     font-style: normal;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
 
     letter-spacing: 0.03em;
 }
 
 footer>address>ul a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--transparent-gray);
 }
 
 footer li:first-of-type>a {
-    color: #FFFFFF; 
+    color: var(--white);
 }
-
-
