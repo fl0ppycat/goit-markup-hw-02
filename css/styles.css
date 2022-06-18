@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+
+
+body {
+    min-width: 1600px;
+    background-color: #FFFFFF;
+    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+
+    color: #212121;
+}
+
+section{
+    padding: 60px 200px;
+}
+
+a{
+    text-decoration: none;
+    color: #212121;
+}
+
+a:hover{
+    color: #2196F3;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1{
+    text-align: center;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+
+    /* or 136% */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+h2{
+    margin-bottom: 50px;
+
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+}
+
+
+
+
+
+header {
+    height: 80px;
+    
+    padding: 0px 200px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ECECEC;;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+header ul a {
+    margin: 25px;
+}
+
+header > ul > li > a{
+    color: #757575;
+}
+
+.studio-logo {
+    margin-top: 0;
+
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+
+    /* identical to box height */
+    letter-spacing: 0.03em;
+
+    color: #2196F3;
+}
+
+header .studio-logo span:last-child {
+    color: #212121;
+}
+
+footer .studio-logo span:last-child {
+    color: #FFFFFF;
+}
+
+
+
+
+
+.hero-section{
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #2F303A;
+    
+    text-transform: uppercase;
+}
+
+.hero-section > h1{
+    color: #FFFFFF;
+}
+
+.hero-section > button {
+    width: 200px;
+    height: 50px;
+
+    background-color: #2196F3;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+
+    cursor: pointer;
+}
+
+
+
+
+
+.advantages-section > ul {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.advantages-section li {
+    margin: auto 15px ;
+
+    font-size: 14px;
+    line-height: 24px;
+
+    /* or 171% */
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+.advantages-section h3 {
+    margin: 10px 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+}
+
+
+
+
+
+.our-work-section {
+    padding-top: 0;
+
+    text-align: center;
+}
+
+.our-work-section > ul {
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-work-section li {
+    margin: auto 15px;
+}
+
+.our-work-section > h2 {
+    margin-top: 0;
+}
+
+.our-work-section img {
+    width: 370px;
+    height: 294px;
+}
+
+
+
+
+
+
+
+.portfolio-section .cards,
+.our-team-section .cards {
+    min-width: 1210px;
+
+    margin: auto 5%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    padding: 0;
+}
+
+.card {
+    margin: 15px;
+    padding-bottom: 24px;
+
+    background: #FFFFFF;
+
+    font-style: normal;
+}
+
+.our-team-section {
+    background-color: #F5F4FA;
+}
+
+.our-team-section .card {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-section .card > img{
+    width: 270px;
+    height: 260px;
+}
+
+.our-team-section .card {
+    text-align: center;
+}
+
+.our-team-section .card-title {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-team-section .card-caption {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+
+
+.portfolio-cards-filter{
+    margin: auto 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio-cards-filter button{
+    padding: 6px 22px;
+    margin: 8px;
+
+    background: #F5F4FA;
+    border: none;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    /* identical to box height, or 162% */
+    /* text-align: center; */
+    letter-spacing: 0.03em;
+
+    white-space: nowrap
+}
+
+.portfolio-cards-filter button:hover {
+    background: #2196F3;
+    color: #FFFFFF;
+
+    /* shadow-middle */
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+
+    cursor: pointer;
+}
+
+.portfolio-section {
+    background-color: #FFFFFF;
+}
+
+.portfolio-section .card {
+    border: 1px solid #EEEEEE;
+}
+
+.portfolio-section .card > img {
+    width: 370px;
+    height: 294px;
+}
+
+.portfolio-section .card-title {
+    margin: 20px 0px 0px 30px;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+
+    color: #212121;
+}
+
+.portfolio-section .card-caption{
+    margin-left: 30px;
+
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
+    color: #757575;
+}
+
+
+
+
+
+footer{
+    padding: 60px 200px;
+
+    background: #2F303A;
+}
+
+footer>address>ul{
+    padding: 0;
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    letter-spacing: 0.03em;
+}
+
+footer>address>ul a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+footer li:first-of-type>a {
+    color: #FFFFFF; 
+}
+
+
